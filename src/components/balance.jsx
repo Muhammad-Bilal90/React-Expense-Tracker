@@ -3,6 +3,7 @@ import { GlobalContext } from '../context/globalState';
 
 const Balance = () => {
     const { transactions } = useContext(GlobalContext);
+    let balance;
 
     // const amounts = transactions.map(transaction => transaction.amount);
     // const amountLeft = amounts.reduce((acc,item) => (acc += item),0).toFixed(2);
@@ -25,10 +26,12 @@ const Balance = () => {
         return expense;
     }
 
+    balance = getIncome() + getExpense();
+
     return (
         <>
             <h4>Your Balance</h4>
-            <h1>PKR {getIncome() + getExpense()}</h1>
+            <h1>PKR {balance.toFixed(2)}</h1>
         </>    
     )
 }
