@@ -28,7 +28,7 @@ const Balance = () => {
     return (
         <>
             <h4>Balance</h4>
-            <h1>${getIncome() + getExpense()}</h1>
+            <h1>PKR {getIncome() + getExpense()}</h1>
         </>    
     )
 }

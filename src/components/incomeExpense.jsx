@@ -31,11 +31,11 @@ const IncomeExpense = () => {
         <div className="inc-exp-container">
             <div>
                 <h4>Income</h4>
-                <p className="money plus">${getIncome()}</p>
+                <p className="money plus">PKR {getIncome()}</p>
             </div>
             <div>
                 <h4>Expense</h4>
-                <p className="money minus">${Math.abs(getExpense())}</p>
+                <p className="money minus">PKR {Math.abs(getExpense())}</p>
             </div>
         </div>
     )
