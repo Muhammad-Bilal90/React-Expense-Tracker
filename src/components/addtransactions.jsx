@@ -28,12 +28,12 @@ const AddTransactions = () => {
             <form onSubmit={onSubmit}>
                 <div className="form-control">
                     <label htmlFor="category">category</label>
-                    <input type="text" required value={category} onChange={(e) => setCategory(e.target.value)}/>
+                    <input type="text" placeholder="Add transactions cause here" required value={category} onChange={(e) => setCategory(e.target.value)}/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="amount">Amount <br/ >
                     (Negative - Expense, Positive - Income)</label>
-                    <input type="number" required value={amount} onChange={(e) => setAmount(e.target.value)}/>
+                    <input type="number" placeholder="Add transactions amount here (digits only)" required value={amount} onChange={(e) => setAmount(e.target.value)}/>
                 </div>
                 <button className="btn">Add Transaction</button>
             </form>
